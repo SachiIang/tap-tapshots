@@ -8339,10 +8339,6 @@ var comp_game_screen = {
             this.hidePopupsIfGameCloses();
             extern.leaveGame(this.afterLeftGame);
             vueData.ui.showCornerButtons = true;
-            // OneSignal elements are not part of the Vue app
-            var oneSignalBell = document.getElementById('onesignal-bell-container');
-            if (oneSignalBell) {
-                oneSignalBell.style.display = 'inline-block';
             }
         },
 
