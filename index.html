@@ -602,30 +602,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- DO NOT MODIFY -->
 <!-- End Facebook Pixel Code -->
 <!-- OneSignal -->
-<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-<script>
-	var osAppId = 'dae68bc6-167c-4012-8644-90fe9db39950';
-	
-	if (!location.hostname.startsWith('shellshock')) {
-		if (location.hostname.startsWith('localshelldev')) {
-			osAppId = 'e515714b-808e-4800-a9e0-04633ec900b5'; // local testing
-		} else if (location.hostname.startsWith('dev')) {
-			osAppId = '20bd47ca-cce1-428e-b34f-1a240f643112'; // dev testing
-		} else if (location.hostname.startsWith('localhost')) {
-			osAppId = '884bfbf7-5bcb-4170-9bf4-bba6b6e0046e';// localhost testing
-		} else {
-			osAppId = '166e17cb-5c02-4c7d-8bff-8ec69729f725'; // internal testing
-		}
-	}
-	var OneSignal = window.OneSignal || [];
-	OneSignal.push(function() {
-		OneSignal.init({
-		    appId: osAppId,
-			// autoResubscribe:true,
-			// allowLocalhostAsSecureOrigin: true
-		});
-	});
-</script><!-- progressive web app -->
+<!-- progressive web app -->
 <!-- <button id="addToHomescreen" style="z-index:333;display: none; position:absolute; top:0px; right: 75%; cursor:pointer;" class="ss_button btn_yolk bevel_yolk">Add to your desktop!</button> -->
 
 <script>
