@@ -341,24 +341,18 @@
           console.log('>>');
         }
       }
-
       function ShowInfo() {
         $("div.main-panel").css('width', $("div.main-panel").css('max-width'));
         $("div.main-panel-ads").css('display', 'block');
         $("div.main-panel-content").css('display', 'block');
         $('button.hide-main-panel').children('i').html('>>');
       }
-
       function HideInfo() {
         $("div.main-panel").css('width', '0px');
         $("div.main-panel-ads").css('display', 'none');
         $("div.main-panel-content").css('display', 'none');
         $('button.hide-main-panel').children('i').html('Info');
-      }
-      $('button.hide-main-panel').click(function() {
-        console.log('a');
-        ToggleInfo();
-      });
+      };
     </script>
   </body>
 </html>
